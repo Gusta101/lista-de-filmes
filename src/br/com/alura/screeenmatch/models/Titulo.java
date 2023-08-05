@@ -3,14 +3,9 @@ package br.com.alura.screeenmatch.models;
 public class Titulo {
     private String nome;
     private int anoLancamento;
-    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalAvaliacoes;
     private int duracaoEmMinutos;
-
-    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
-    }
 
     public int getTotalAvaliacoes() {
         return totalAvaliacoes;
@@ -42,7 +37,7 @@ public class Titulo {
         totalAvaliacoes++;
     }
 
-    public double pegaMedia() {
+    public double getMedia() {
         return somaDasAvaliacoes / totalAvaliacoes;
     }
 }
